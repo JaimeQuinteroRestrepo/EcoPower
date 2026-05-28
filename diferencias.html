@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferencias | EcoPower</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+</head>
+<body class="sub-page">
+
+    <header class="navbar-wrapper">
+        <nav class="navbar solid-nav">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#4CAF50" stroke-width="2"/>
+                    <path d="M13 10V3L5 14H11V21L19 10H13Z" fill="#FDD835"/>
+                    <path d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C15.01 22 17.71 20.67 19.55 18.52L12 2Z" fill="#81C784" fill-opacity="0.3"/>
+                </svg>
+                <span>EcoPower</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="potencia.html">Potencia</a></li>
+                <li><a href="energia.html">Energía</a></li>
+                <li><a href="diferencias.html" class="active">Diferencia</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="consejos.html">Consejos</a></li>
+                <li><a href="sostenibilidad.html">Sostenibilidad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container expanded-page">
+        <section class="bubble difference-bubble giant-bubble" style="flex-direction: column;">
+            
+            <div class="bubble-text full-width center-text" style="margin-bottom: 30px;">
+                <h2>El Motor vs La Batería</h2>
+                <p class="large-text">Es vital diferenciar estas dos magnitudes para entender el consumo real.</p>
+            </div>
+
+            <div class="split-panel full-split" style="gap: 50px; width: 100%;">
+                <div class="split-side logic-side">
+                    <div class="icon-wrap">⚡</div>
+                    <h3>Potencia (Vatios)</h3>
+                    <p><strong>potencia = consumo instantáneo de energía = mayor velocidad</strong></p>
+                    <ul class="fast-facts">
+                        <li>Fórmula: $$P = \frac{E}{t}$$</li>
+                        <li>Unidad: Vatios (W)</li>
+                        <li>Ejemplo: Un Tesla Model 3 RWD entrega un pico de potencia de 208,000 W (208 kW) para acelerar.</li>
+                    </ul>
+                </div>
+                
+                <div class="split-image logic-img">
+                    <img src="assets/car_tank_1772921066853.png" alt="Auto Eléctrico">
+                </div>
+                
+                <div class="split-side logic-side">
+                    <div class="icon-wrap">🔋</div>
+                    <h3>Energía (Vatios hora)</h3>
+                    <p>Consumo total acumulado extraído de la batería.</p>
+                    <ul class="fast-facts">
+                        <li>Fórmula: $$E = P \cdot t$$</li>
+                        <li>Unidad: Vatios hora (Wh)</li>
+                        <li>Ejemplo: La batería de un Tesla Model 3 RWD almacena 60,000 Wh (60 kWh) de energía utilizable.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bubble-text full-width" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
+                <h3>Rigor Cuantitativo: ¿Cómo llegamos a estos datos?</h3>
+                <p>Para entender los datos reales del ejemplo, realizamos los siguientes cálculos paso a paso:</p>
+                
+                <div class="info-box" style="text-align: left; background: var(--color-surface); margin-bottom: 20px;">
+                    <p><strong>1. Consumo de Energía:</strong> Si conduces este vehículo manteniendo una potencia promedio de 15,000 W (15 kW) durante un viaje de 4 horas:</p>
+                    <p style="text-align: center;">$$15,000\text{ W} \times 4\text{ h} = 60,000\text{ Wh (60 kWh)}$$</p>
+                    <p>Esto significa que habrías agotado la capacidad total de la batería.</p>
+
+                    <p><strong>2. Demanda de Potencia:</strong> Si quisieras extraer esos mismos 60 kWh de energía en solo 15 minutos (0.25 horas), ¿cuánta potencia necesitarías?</p>
+                    <p style="text-align: center;">$$P = \frac{60,000\text{ Wh}}{0.25\text{ h}} = 240,000\text{ W (240 kW)}$$</p>
+                </div>
+            </div>
+
+            <div class="bubble-text full-width center-text">
+                <a href="calculadora.html" class="btn-primary">Siguiente: ¡Usa la Calculadora! →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>EcoPower - Ciencia y Sostenibilidad &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
